@@ -81,23 +81,7 @@ def apply_qft(circuit, num_qubits):
             circuit.cp(np.pi / (2 ** (k - j)), j, k)
     for j in range(num_qubits // 2):
         circuit.swap(j, num_qubits - j - 1)
-
-# Function to convert public key to Public-Key-Hash (SHA256 -> RIPEMD160)
-def public_key_to_public_key_hash(public_key_hex):    
-    try:
-        # Step 1: Perform SHA-256 on the public key
-        sha256_hash = SHA256.new(bytes.fromhex(public_key_hex)).digest()
         
-        # Step 2: Perform RIPEMD-160 on the result of SHA-256 using Cryptodome
-        ripemd160 = RIPEMD160.new()  # Using Cryptodome's RIPEMD160
-        ripemd160.update(sha256_hash)
-        ripemd160_hash = ripemd160.digest()
-        
-        # Return the Public-Key-Hash in hexadecimal format
-        return ripemd160_hash.hex()
-    
-    except ValueError as e:
-        raise ValueError(f"Invalid input for public key hex: {e}")
 
 # Function to convert public key to Public-Key-Hash (SHA256 -> RIPEMD160)
 def public_key_to_public_key_hash(public_key_hex):    
