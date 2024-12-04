@@ -28,7 +28,7 @@ import math
 # Load IBMQ account using QiskitRuntimeService
 QiskitRuntimeService.save_account(
     channel='ibm_quantum',
-    token='REPLACE_WITH_YOUR_IBM_TOKEN_HERE',  # Replace with your actual token
+    token='_REPLACE_WITH_YOUR_IBM_QUANTUM_TOKEN_RIGHT_HERE_',  # Replace with your actual token
     instance='ibm-q/open/main',
     overwrite=True,
     set_as_default=True
@@ -45,6 +45,12 @@ def apply_qft(circuit, num_qubits):
     """Applies the Quantum Fourier Transform on the first `num_qubits` qubits of the circuit."""
     qft = QFT(num_qubits)
     circuit.append(qft, range(num_qubits))
+        for j in range(num_qubits):
+        circuit.h(j)
+        for k in range(j + 1, num_qubits):
+            circuit.cp(np.pi / (2 ** (k - j)), j, k)
+    for j in range(num_qubits // 2):
+        circuit.swap(j, num_qubits - j - 1)
 
 # Function to convert private key to compressed Bitcoin address
 def private_key_to_compressed_address(private_key_hex):
@@ -71,17 +77,7 @@ def private_key_to_compressed_address(private_key_hex):
     binary_address = network_byte + checksum
     bitcoin_address = base58.b58encode(binary_address).decode('utf-8')
     print(f"Generated Bitcoin address: {bitcoin_address}")
-    return bitcoin_address
-
-def apply_qft(circuit, num_qubits):
-    """Applies the Quantum Fourier Transform to the first num_qubits."""
-    for j in range(num_qubits):
-        circuit.h(j)
-        for k in range(j + 1, num_qubits):
-            circuit.cp(np.pi / (2 ** (k - j)), j, k)
-    for j in range(num_qubits // 2):
-        circuit.swap(j, num_qubits - j - 1)
-        
+    return bitcoin_address     
 
 # Function to convert public key to Public-Key-Hash (SHA256 -> RIPEMD160)
 def public_key_to_public_key_hash(public_key_hex):    
