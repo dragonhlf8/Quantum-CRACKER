@@ -42,13 +42,24 @@ SECP256K1_ORDER = 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEBAAEDCE6AF48A03BBFD25E8CD036
 from qiskit.circuit.library import QFT
 
 def apply_qft(circuit, num_qubits):
-    """Applies the Quantum Fourier Transform on the first `num_qubits` qubits of the circuit."""
+    """
+    Applies the Quantum Fourier Transform (QFT) on the first `num_qubits` qubits of the circuit.
+
+    Args:
+        circuit (QuantumCircuit): The quantum circuit to which QFT is applied.
+        num_qubits (int): The number of qubits to include in the QFT.
+    """
+    # Append the QFT library object for validation
     qft = QFT(num_qubits)
     circuit.append(qft, range(num_qubits))
-        for j in range(num_qubits):
+    
+    # Manual implementation of QFT for additional customization
+    for j in range(num_qubits):
         circuit.h(j)
         for k in range(j + 1, num_qubits):
             circuit.cp(np.pi / (2 ** (k - j)), j, k)
+    
+    # Swap operations to reverse the order of qubits
     for j in range(num_qubits // 2):
         circuit.swap(j, num_qubits - j - 1)
 
