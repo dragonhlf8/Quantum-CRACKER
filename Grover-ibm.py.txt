@@ -28,7 +28,7 @@ import math
 # Load IBMQ account using QiskitRuntimeService
 QiskitRuntimeService.save_account(
     channel='ibm_quantum',
-    token='JUST_PUT_YOUR_IBM_TOKEN_HERE',  # Replace with your actual token
+    token='REPLACE_WITH_YOUR_IBM_TOKEN_HERE',  # Replace with your actual token
     instance='ibm-q/open/main',
     overwrite=True,
     set_as_default=True
