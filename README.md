@@ -72,4 +72,10 @@ The script contains placeholders (e.g., API token) that need to be replaced with
 It demonstrates cutting-edge quantum and classical hybrid computations but may require substantial computational resources.
 Attempting to brute-force private keys is illegal unless done for educational or ethical purposes with proper authorization.
 
+CONCLUSION : 
+
+The Code wil use your own CPU+GPU speeds to create a quantum circuit with grover itterations correspend to the btc_address you wanna attack with almost instant speed surley after Transpiling the full Quantum-Circuit into the quantum machine and if there is no pending jobs the progress will be about 2 sec into 1 minute only dpend on how bigger is the num_shots ( wich is how many times the program will shots The qubits inside the Q-circuit
+you can get the number easly by caclutation the square root of N where N is the total number of possibilites/Totalrange of the search Keyspace. and than if you succesed created that big nubmer of grover ittertaion fully
+the next step it transpiling the circuit into the QPU-Backend wich is also limited for most of ibm-QPUs to certain number and than The QPU will use QFT quantum-fourier-transform to bruteforce through the circuit using all the 4 values of ( num_qubits , num_iterrations , target_state, publickey_x and Finlay uses an extra 1 ancilla qubits for Ancillarity num_ancillas=1 to reduce the Quantum Errors Results to get only the most frequents results counts retrived from QPU .
+and if you know about how i made it --> The credits is for this ''oracles'' that can make you include some operations inside The QuantumCircuit.
 
