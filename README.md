@@ -54,9 +54,11 @@ Creates a quantum oracle to mark states matching the target address by comparing
 Diffusion Operator:
 
 Implements Grover's diffusion operator with CUDA-enabled matrix operations for performance improvements.
+
 Grover's Algorithm Execution:
 
 Iteratively applies the oracle and diffusion operator to amplify the probability of measuring the target state.
+
 Result Validation:
 
 Checks the measured states from quantum hardware against the target Bitcoin address.
