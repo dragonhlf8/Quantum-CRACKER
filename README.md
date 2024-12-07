@@ -17,6 +17,7 @@ Quantum computing libraries (e.g., qiskit, qiskit_ibm_runtime) for implementing 
 GPU-accelerated operations using CuPy for enhancing performance.
 Supports functions for elliptic curve point operations and scalar multiplication.
 
+
 Quantum Fourier Transform (QFT):
 
 A utility function for applying the Quantum Fourier Transform, commonly used in quantum algorithms.
@@ -36,12 +37,15 @@ Retrieves measurement results and checks if the output corresponds to the target
 Integration with Classical Search:
 Combines quantum results with classical validation to ensure the retrieved private key is correct.
 
+
 Output Management:
+
 Writes successful private keys and corresponding Bitcoin addresses to an output text file (boomQFT.txt) for record-keeping.
 
 Functionality Breakdown
 Elliptic Curve Operations:
 Support for modular arithmetic, point addition, doubling, and scalar multiplication on the SECP256k1 curve.
+
 Oracle Construction:
 
 Creates a quantum oracle to mark states matching the target address by comparing public key x-coordinates.
