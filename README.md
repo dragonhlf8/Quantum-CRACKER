@@ -46,6 +46,7 @@ Functionality Breakdown
 Elliptic Curve Operations:
 Support for modular arithmetic, point addition, doubling, and scalar multiplication on the SECP256k1 curve.
 
+
 Oracle Construction:
 
 Creates a quantum oracle to mark states matching the target address by comparing public key x-coordinates.
