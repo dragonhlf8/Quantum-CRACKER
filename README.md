@@ -22,7 +22,6 @@ Quantum Fourier Transform (QFT):
 A utility function for applying the Quantum Fourier Transform, commonly used in quantum algorithms.
 
 Grover's Oracle:
-
 Marks the quantum state corresponding to the target private key.
 Uses elliptic curve scalar multiplication to validate private keys against the target public key coordinates.
 
@@ -31,12 +30,10 @@ Implements Grover's algorithm, iterating over the quantum states in superpositio
 The process is CUDA-accelerated for diffusion operator steps to reduce computational overhead.
 
 The Job Submission and Result Retrieval:
-
 Submits quantum circuits to IBM Quantum services.
 Retrieves measurement results and checks if the output corresponds to the target Bitcoin address.
 
 Integration with Classical Search:
-
 Combines quantum results with classical validation to ensure the retrieved private key is correct.
 
 Output Management:
@@ -44,21 +41,17 @@ Writes successful private keys and corresponding Bitcoin addresses to an output 
 
 Functionality Breakdown
 Elliptic Curve Operations:
-
 Support for modular arithmetic, point addition, doubling, and scalar multiplication on the SECP256k1 curve.
 Oracle Construction:
 
 Creates a quantum oracle to mark states matching the target address by comparing public key x-coordinates.
 Diffusion Operator:
-
 Implements Grover's diffusion operator with CUDA-enabled matrix operations for performance improvements.
 
 Grover's Algorithm Execution:
-
 Iteratively applies the oracle and diffusion operator to amplify the probability of measuring the target state.
 
 Result Validation:
-
 Checks the measured states from quantum hardware against the target Bitcoin address.
 Use Cases
 This script is suited for experimental purposes in quantum computing and cryptographic research. However, it highlights the following:
