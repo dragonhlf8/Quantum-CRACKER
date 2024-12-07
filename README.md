@@ -68,8 +68,28 @@ Attempting to brute-force private keys is illegal unless done for educational or
 
 CONCLUSION : 
 
-The Code will use your own CPU+GPU speeds to create a quantum circuit with grover iterations correspend to the btc_address you wanna attack with almost instant speed surley after Transpiling the full Quantum-Circuit into the quantum machine and if there is no pending jobs the progress will be about 2 sec into 1 minute only dpend on how bigger is the num_shots ( wich is how many times the program will shots The qubits inside the Q-circuit
-you can get the number easly by caclutation the square root of N where N is the total number of possibilites/Totalrange of the search Keyspace. and than if you succesed created that big nubmer of grover ittertaion fully
-the next step it transpiling the circuit into the QPU-Backend wich is also limited for most of ibm-QPUs to certain number and than The QPU will use QFT quantum-fourier-transform to bruteforce through the circuit using all the 5 values of ( num_qubits , num_iterations , target_state, publickey_x and Finlay uses an extra 1 ancilla qubits for Ancillarity num_ancillas=1 to reduce the Quantum Errors Results to get only the most frequents results counts retrived from QPU .
-and if you know about how i made it --> The credits is for this ''oracles'' that can make you include some operations inside The QuantumCircuit.
+The Code will use both your own CPU+GPU speeds to create a quantum circuit with grover iterations correspend to the btc_address you wanna attack with almost instant speed surley after Transpiling the full Quantum-Circuit into the quantum machine and if there is no pending jobs the progress will be about 2 sec into 1 minute only dpend on how bigger is the num_shots ( wich is how many times the program will shots The qubits inside the Q-circuit
+you can get the number easly by caclutation the square root of N where N is the total number of possibilites/Totalrange of the search Keyspace. and than if you succesed created that big nubmer of grover itertaion fully ( quantum_circuit_size = num_qubits + num_grover_iterraions ) .
+the next step it transpiling the circuit into the QPU-Backend wich is also limited for most of ibm-QPUs to certain number and than The QPU will use QFT quantum-fourier-transform to bruteforce through the circuit using all the 5 values of ( num_qubits , num_iterrations , target_state, publickey_x and Finlay uses an extra 1 ancilla qubits for Ancillarity num_ancillas=1 to reduce the Quantum Errors Results to get only the most frequents results counts retrived from QPU .
+and if you wanna know about how i made it --> The credits is for this ''oracles'' that can make you include some operations inside The QuantumCircuit.
+
+EXTRA informations :
+The Num_iterations that is still inside Grover-ibm.py is just for testing i used 65536 and already worked for low puzzles cause of limitations of Google-Colab Ressources so if you make it higher you get Rejected with CTRL+C. And i already explained and answered all questions and basics of how the current code should work : in issue N° https://github.com/threealgos/Quantum-CRACKER/issues/1
+
+Also i used num_qubits = 125 cause That is the max i can use for those limited 3 free Ibm-backend that has only 127 qubits and my program will use 126 qubits cause of that last extra anclia qubit
+i am poor i hope some donations i can't even sub to higher quantum-devices with higher number of Qubits like Aquilla 256 Qubits.
+
+
+
+
+
+
+
+
+
+Donations Please for my Quantum Project 1NEJcwfcEm7Aax8oJNjRUnY3hEavCjNrai
+
+This is my BTC  address To Reveal The Next version of public-addresses 1NEJcwfcEm7Aax8oJNjRUnY3hEavCjNrai
+
+Support This is my LTC Litecoin address for the next version of public-addresses :LMiCcsUnuWzTK5w4Dih4s5CqtWT6YRVsAZ
 
