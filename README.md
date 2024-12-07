@@ -1,6 +1,6 @@
 The requirements are inside the notebook .
 _________________________________________________________________________________________
-i hope somone of you will donate 1NEJcwfcEm7Aax8oJNjRUnY3hEavCjNrai  for The Quantum Project .
+i hope somone of you will donate _ 1NEJcwfcEm7Aax8oJNjRUnY3hEavCjNrai _  for The Quantum Project .
 
 //////////////////////////////////////////////////////////////////////////////////////////
 ------------------------------------------------------------------------------------------
