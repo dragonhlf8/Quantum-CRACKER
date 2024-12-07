@@ -15,7 +15,6 @@ Imports and Setup:
 Key Components
 Quantum computing libraries (e.g., qiskit, qiskit_ibm_runtime) for implementing and executing Grover's algorithm.
 GPU-accelerated operations using CuPy for enhancing performance.
-
 Supports functions for elliptic curve point operations and scalar multiplication.
 
 Quantum Fourier Transform (QFT):
@@ -41,7 +40,6 @@ Integration with Classical Search:
 Combines quantum results with classical validation to ensure the retrieved private key is correct.
 
 Output Management:
-
 Writes successful private keys and corresponding Bitcoin addresses to an output text file (boomQFT.txt) for record-keeping.
 
 Functionality Breakdown
