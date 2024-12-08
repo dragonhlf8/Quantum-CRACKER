@@ -1,3 +1,4 @@
+#i realy hope you get me some Donation for the Quantum project_ 1NEJcwfcEm7Aax8oJNjRUnY3hEavCjNrai /////
 import cupy as cp  # CUDA-accelerated operations using CuPy
 from qiskit import QuantumCircuit, transpile
 from qiskit.circuit.controlflow.break_loop import BreakLoopPlaceholder
