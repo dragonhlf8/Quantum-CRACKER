@@ -40,8 +40,6 @@ service = QiskitRuntimeService()
 
 SECP256K1_ORDER = 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEBAAEDCE6AF48A03BBFD25E8CD0364141
 
-from qiskit.circuit.library import QFT
-
 def apply_qft(circuit, num_qubits):
     """
     Applies the Quantum Fourier Transform (QFT) on the first `num_qubits` qubits of the circuit.
