@@ -234,9 +234,6 @@ def grovers_algorithm_gpu(num_qubits, target_state, iterations=65536):
     circuit.h(range(num_qubits))
     print("Initialized qubits in superposition.")
 
-    # Apply QFT (if required)
-    apply_qft(circuit, num_qubits)
-
     for iteration in range(iterations):
         print(f"Applying Grover iteration {iteration + 1} using CUDA...")
 
@@ -406,6 +403,9 @@ def quantum_brute_force(public_key_x: int, g_x: int, g_y: int, p: int, min_range
         # Apply Hadamard gates to all qubits to create superposition
         circuit.h(range(quantum_registers))
         print("Hadamard gates applied.")
+
+        # Apply QFT to the quantum circuit
+        apply_qft(circuit, quantum_registers)
 
         # Apply Grover's iterations
         print(f"Applying Grover's iterations ({num_iterations} iterations).")
