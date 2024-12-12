@@ -405,9 +405,6 @@ def quantum_brute_force(public_key_x: int, g_x: int, g_y: int, p: int, min_range
         circuit.h(range(quantum_registers))
         print("Hadamard gates applied.")
 
-        # Apply QFT to the quantum circuit
-        apply_qft(circuit, quantum_registers)
-
         # Apply Grover's iterations
         print(f"Applying Grover's iterations ({num_iterations} iterations).")
         for _ in range(num_iterations):
