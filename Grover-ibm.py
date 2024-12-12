@@ -234,6 +234,9 @@ def grovers_algorithm_gpu(num_qubits, target_state, iterations=65536):
     circuit.h(range(num_qubits))
     print("Initialized qubits in superposition.")
 
+    # Apply QFT (if required)
+    apply_qft(circuit, num_qubits)
+
     for iteration in range(iterations):
         print(f"Applying Grover iteration {iteration + 1} using CUDA...")
 
