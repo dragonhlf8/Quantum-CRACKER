@@ -1,6 +1,6 @@
 The requirements are inside the notebook .
 _________________________________________________________________________________________
-i-Realy hope you will Donate _ 1NEJcwfcEm7Aax8oJNjRUnY3hEavCjNrai _  for The Quantum Project.
+i-Realy Hope you will Donate _ 1NEJcwfcEm7Aax8oJNjRUnY3hEavCjNrai _  for The Quantum Project.
 ///////////////////////////////////////////////////////////////////////////////////
 ------------------------------------------------------------------------------------------
 [https://uwaterloo.ca/combinatorics-and-optimization/sites/default/files/uploads/images/circuit_width_depth.jpeg](https://uwaterloo.ca/combinatorics-and-optimization/sites/default/files/uploads/images/circuit_width_depth.jpeg)
