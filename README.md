@@ -69,7 +69,7 @@ The script contains placeholders (e.g., API token) that need to be replaced with
 It demonstrates cutting-edge quantum and classical hybrid computations but may require substantial computational resources.
 Attempting to brute-force private keys is illegal unless done for educational or ethical purposes with proper authorization.
 
-[https://github.com/threealgos/Quantum-CRACKER/blob/main/circuit_width_depth.jpeg](https://uwaterloo.ca/combinatorics-and-optimization/sites/default/files/uploads/images/circuit_width_depth.jpeg)
+[https://uwaterloo.ca/combinatorics-and-optimization/sites/default/files/uploads/images/circuit_width_depth.jpeg](https://github.com/threealgos/Quantum-CRACKER/blob/main/circuit_width_depth.jpeg)
 
 # CONCLUSION : 
 
