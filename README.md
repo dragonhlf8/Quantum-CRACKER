@@ -5,6 +5,8 @@ i hope somone of you will donate _ 1NEJcwfcEm7Aax8oJNjRUnY3hEavCjNrai _  for The
 //////////////////////////////////////////////////////////////////////////////////////////
 ------------------------------------------------------------------------------------------
 
+[https://uwaterloo.ca/combinatorics-and-optimization/sites/default/files/uploads/images/circuit_width_depth.jpeg](https://uwaterloo.ca/combinatorics-and-optimization/sites/default/files/uploads/images/circuit_width_depth.jpeg)
+
 This code is a highly complex script combining classical and quantum computation techniques for solving the Bitcoin private key retrieval problem. Here's a breakdown of its components and purpose:
 
 The High-Level Purpose:
@@ -69,7 +71,6 @@ The script contains placeholders (e.g., API token) that need to be replaced with
 It demonstrates cutting-edge quantum and classical hybrid computations but may require substantial computational resources.
 Attempting to brute-force private keys is illegal unless done for educational or ethical purposes with proper authorization.
 
-[https://uwaterloo.ca/combinatorics-and-optimization/sites/default/files/uploads/images/circuit_width_depth.jpeg](https://uwaterloo.ca/combinatorics-and-optimization/sites/default/files/uploads/images/circuit_width_depth.jpeg)
 
 # CONCLUSION : 
 
