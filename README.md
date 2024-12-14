@@ -69,6 +69,8 @@ The script contains placeholders (e.g., API token) that need to be replaced with
 It demonstrates cutting-edge quantum and classical hybrid computations but may require substantial computational resources.
 Attempting to brute-force private keys is illegal unless done for educational or ethical purposes with proper authorization.
 
+https://uwaterloo.ca/combinatorics-and-optimization/sites/default/files/uploads/images/circuit_width_depth.jpeg
+
 # CONCLUSION : 
 
 The Code will use both your own CPU+GPU speeds to create a quantum circuit with grover iterations correspend to the btc_address you wanna attack with almost instant speed surley after Transpiling the full Quantum-Circuit into the quantum machine and if there is no pending jobs the progress will be about 2 sec into 1 minute only dpend on how bigger is the num_shots ( wich is how many times the program will shots The qubits inside the Q-circuit
