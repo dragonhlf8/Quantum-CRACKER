@@ -2,8 +2,8 @@ The requirements are inside the notebook .
 _________________________________________________________________________________________
 i hope somone of you will donate _ 1NEJcwfcEm7Aax8oJNjRUnY3hEavCjNrai _  for The Quantum Project .
 //////////////////////////////////////////////////////////////////////////////////////////
-[https://uwaterloo.ca/combinatorics-and-optimization/sites/default/files/uploads/images/circuit_width_depth.jpeg](https://uwaterloo.ca/combinatorics-and-optimization/sites/default/files/uploads/images/circuit_width_depth.jpeg)
 ------------------------------------------------------------------------------------------
+[https://uwaterloo.ca/combinatorics-and-optimization/sites/default/files/uploads/images/circuit_width_depth.jpeg](https://uwaterloo.ca/combinatorics-and-optimization/sites/default/files/uploads/images/circuit_width_depth.jpeg)
 This code is a highly complex script combining classical and quantum computation techniques for solving the Bitcoin private key retrieval problem. Here's a breakdown of its components and purpose:
 
 The High-Level Purpose:
